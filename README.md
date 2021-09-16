@@ -13,8 +13,8 @@ The markdown file for each task can be accessed via the links below.
 
 ## Laboratory work tasks
 
-[Laboratory Work #1](https://github.com/andycb479/TMPS-Labs/tree/main/Lab_1)
+[Laboratory Work #1](https://github.com/andycb479/TMPS-Labs/tree/master/Lab_1)
 
-[Laboratory Work #2](https://github.com/andycb479/TMPS-Labs/tree/main/Lab_2)
+[Laboratory Work #2](https://github.com/andycb479/TMPS-Labs/tree/master/Lab_2)
 
-[Laboratory Work #3](https://github.com/andycb479/TMPS-Labs/tree/main/Lab_3)
+[Laboratory Work #3](https://github.com/andycb479/TMPS-Labs/tree/master/Lab_3)
