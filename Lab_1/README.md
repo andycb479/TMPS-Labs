@@ -55,7 +55,7 @@ Use of Singleton in the app:
 
 ![image](https://user-images.githubusercontent.com/30950318/133799067-ed27ab30-83f8-459e-83ed-b9ef89025fb5.png)
 
-### Factory Method
+### Factory Method [Code](https://github.com/andycb479/TMPS-Labs/tree/master/Lab_1/Factory)
 Factory Method is a Design Pattern which defines an interface for creating an object but lets the classes that implement the interface decide which class to instantiate. Factory Pattern lets a class postpone instantiation to sub-classes. The factory pattern is used to replace class constructors, abstracting the process of object generation so that the type of the object instantiated can be determined at run-time. 
 
 ![image](https://user-images.githubusercontent.com/30950318/133798379-d5f2aea7-b33b-439d-9f59-f039fb873f91.png)
