@@ -118,12 +118,20 @@ creates a new object by asking a prototype to clone itself
 
 ![image](https://user-images.githubusercontent.com/30950318/133805841-b881f2b3-c6c3-4bee-b806-c68e5e03cea9.png)
 
+Use of the prototype patern
+
+![image](https://user-images.githubusercontent.com/30950318/133806377-2b163592-2e92-4646-9009-228e037f6c0d.png)
+
 Advantages of Prototype Design Pattern
 
  - You can clone objects without coupling to their concrete classes.
  - You can get rid of repeated initialization code in favor of cloning pre-built prototypes.
  - You can produce complex objects more conveniently.
  - You get an alternative to inheritance when dealing with configuration presets for complex objects.
+
+## Conclusions
+In conclusion, it can be said that *Creational Design Patterns* solve some important problems present in software development, namely in the architecure design process. This class of paterns are seeking to centralize the creation and instantiation by eliminating the responsibilities of dependent classes to create objects, that have a valid state and expected content. Often these patterns come to solve some problems but there are cases when their use can cause other problems that contradict the SOLID principles.
+
 
 
 
