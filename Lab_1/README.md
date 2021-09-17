@@ -39,6 +39,10 @@ A public and static way of getting the reference to the created instance.
 
 ![image](https://user-images.githubusercontent.com/30950318/133797446-4ad01d0a-dd32-4838-912f-1d7f248bf1b5.png)
 
+Functionality of the Singleton Class
+
+![image](https://user-images.githubusercontent.com/30950318/133798904-cbd828f9-8713-43f4-8666-9829e1580785.png)
+
 Advantages of Singleton Design Pattern
 
 - Singleton pattern can implement interfaces.
@@ -47,6 +51,9 @@ Advantages of Singleton Design Pattern
 - It provides a single point of access to a particular instance, so it is easy to maintain.
 
 
+Use of Singleton in the app:
+
+![image](https://user-images.githubusercontent.com/30950318/133799067-ed27ab30-83f8-459e-83ed-b9ef89025fb5.png)
 
 ### Factory Method
 Factory Method is a Design Pattern which defines an interface for creating an object but lets the classes that implement the interface decide which class to instantiate. Factory Pattern lets a class postpone instantiation to sub-classes. The factory pattern is used to replace class constructors, abstracting the process of object generation so that the type of the object instantiated can be determined at run-time. 
@@ -72,6 +79,23 @@ This may call the factory method to create a Product object.
 4. ConcreteCreator
 
 This is a class that implements the Creator class and overrides the factory method to return an instance of a ConcreteProduct.
+
+The implementation within the Business Logic:
+
+The abstract class factory - the base factory
+
+![image](https://user-images.githubusercontent.com/30950318/133799419-3b9d57b8-3f92-405c-892e-75d344b3c464.png)
+
+Concrete Factory
+
+![image](https://user-images.githubusercontent.com/30950318/133799879-4e1623c7-47d9-41b1-b632-a907607361d9.png)
+
+The use of the factory for seeding the database with records
+
+![image](https://user-images.githubusercontent.com/30950318/133799988-1146bda7-8dd6-4e6c-a7cf-0e5b2529a525.png)
+
+
+
 
 
 ### Prototype
