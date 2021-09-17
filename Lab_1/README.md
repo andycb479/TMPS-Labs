@@ -101,8 +101,29 @@ The use of the factory for seeding the database with records
 ### Prototype
 Prototype is a creational design pattern that lets you copy existing objects without making your code dependent on their classes.
 
-![image](https://user-images.githubusercontent.com/30950318/133795495-1915abb7-f6d0-4eb8-900d-f9437f643c60.png)
+![image](https://user-images.githubusercontent.com/30950318/133803581-3a806f48-b02b-4f53-bd6a-76c5da0ddf72.png)
 
+- Prototype  (TablePrototype)
+declares an interface for cloning itself
+
+![image](https://user-images.githubusercontent.com/30950318/133805737-1d7e8247-ec79-4762-a278-a10d5e176337.png)
+
+- ConcretePrototype  (Table)
+implements an operation for cloning itself
+
+![image](https://user-images.githubusercontent.com/30950318/133805801-869ba9a4-dcce-4725-b35e-15d9801f8295.png)
+
+ - Client  (TableManager)
+creates a new object by asking a prototype to clone itself
+
+![image](https://user-images.githubusercontent.com/30950318/133805841-b881f2b3-c6c3-4bee-b806-c68e5e03cea9.png)
+
+Advantages of Prototype Design Pattern
+
+ - You can clone objects without coupling to their concrete classes.
+ - You can get rid of repeated initialization code in favor of cloning pre-built prototypes.
+ - You can produce complex objects more conveniently.
+ - You get an alternative to inheritance when dealing with configuration presets for complex objects.
 
 
 
