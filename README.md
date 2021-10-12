@@ -13,12 +13,12 @@ The markdown file for each task can be accessed via the links below.
 
 ## Laboratory work tasks
 
-[Laboratory Work #1](https://github.com/andycb479/TMPS-Labs/tree/master/Lab_1)
+[Laboratory Work #1](https://github.com/andycb479/TMPS-Labs/blob/master/Client/Lab_1_Report.md)
 
-[Laboratory Work #2](https://github.com/andycb479/TMPS-Labs/tree/master/Lab_2)
+[Laboratory Work #2](https://github.com/andycb479/TMPS-Labs/blob/master/Client/Lab_2_Report.md)
 
-[Laboratory Work #3](https://github.com/andycb479/TMPS-Labs/tree/master/Lab_3)
+[Laboratory Work #3]()
 
 ## Info
 
-The business models used in the labs are located in the TMPS-Labs/Models folder.
+The business models used in the labs are located in the Domain/Models.
