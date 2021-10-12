@@ -1,102 +1,50 @@
-# Topic: *Creational Design Patterns*
+# Topic: *Structural Design Patterns*
 ## Author: *Ciobanu Andy-Constantin*
-------
 ## Objectives :
-__1. Study and understand the Creational Design Patterns;__
+__1. Study and understand the Structural Design Patterns;__
 
-__2. Choose a domain, define its main classes/models/entities and choose the appropriate instantiation mechanisms;__
+__2. As a continuation of the previous laboratory work, think about the functionalities that your system will need to provide to the user;__
 
-__3. Use some creational design patterns for object instantiation in a sample project;__
+__3. Implement some additional functionalities using structural design patterns;__
+
+## Used Design Patterns: 
+* Facade Pattern
+* Proxy Pattern
+* Decorator Pattern
 
 ## Used Language: 
 C# .NET
 
 ## Theoretical aspects : 
 
-In software engineering, creational design patterns are design patterns that deal with object creation mechanisms, trying to create objects in a manner suitable to the situation. The basic form of object creation could result in design problems or added complexity to the design. Creational design patterns solve this problem by somehow controlling this object creation.
+Structural design patterns are those that simplify the design of large object structures by identifying relationships between them. They describe common ways of composing classes and objects so that they become repeatable as solutions.
 
-### Singleton - [Code](https://github.com/andycb479/TMPS-Labs/tree/master/Lab_1/Singleton)
-Singleton design pattern is one of the most popular design patterns. In this pattern, a class has only one instance in the program that provides a global point of access to it. In other words, a singleton is a class that allows only a single instance of itself to be created and usually gives simple access to that instance.
+### Facade - [Code](https://github.com/andycb479/TMPS-Labs/tree/master/Utilites/NotificationManager)
+The facade pattern (also spelled façade) is a software-design pattern commonly used in object-oriented programming. Analogous to a facade in architecture, a facade is an object that serves as a front-facing interface masking more complex underlying or structural code. 
+A facade can:
+* improve the readability and usability of a software library by masking interaction with more complex components behind a single (and often simplified) API
+* provide a context-specific interface to more generic functionality (complete with context-specific input validation)
+* serve as a launching point for a broader refactor of monolithic or tightly-coupled systems in favor of more loosely-coupled code
 
-![image](https://user-images.githubusercontent.com/30950318/133795572-75c7822b-a47a-40f6-b5c6-b55fa80e130f.png)
+![image](https://user-images.githubusercontent.com/30950318/136900188-9f71d7ad-f195-4bb8-8136-abba8114c4fe.png)
 
-There are various ways to implement a singleton pattern. The following are the common characteristics of a singleton pattern implement using lazy loading.
+Here, we can see that the client is calling the Façade class which interacts with multiple subsystems making it easier for the client to interact with them.
 
-Private and parameterless single constructor
+Below is the Notification Service façade class implementation, which will be used by the client to send a notification to a specific Reservee.
 
-![image](https://user-images.githubusercontent.com/30950318/133797684-a3518663-8090-4ea6-a300-3388d28e56ef.png)
+![image](https://user-images.githubusercontent.com/30950318/136900567-b625b162-85ba-4766-8aa9-ae956b28c6ca.png)
 
-Sealed class.
+Here we can see that the Notification Service class is hiding the implementation of sending a notification. Giving the client a simple method that it can use to send a notification without having to know about the internal processes and subsystem access.
 
-![image](https://user-images.githubusercontent.com/30950318/133797360-6647a80c-9c2b-4e35-ad90-67c056ce0854.png)
+Below is the implementation of the NotificationServed that is a subsystem that the Notification Service interacts with.
 
-Static variable to hold a reference to the single created instance
+![image](https://user-images.githubusercontent.com/30950318/136900865-7cd0614e-d4d4-43d4-8c2d-199df479fdb2.png)
 
-![image](https://user-images.githubusercontent.com/30950318/133797393-92a0658e-79ea-4496-8cf0-8c673f113008.png)
+Use of Facade in the Client:
 
+![image](https://user-images.githubusercontent.com/30950318/136900405-c1582202-fbdb-4164-9b9e-f20dae382ddd.png)
 
-A public and static way of getting the reference to the created instance.
-
-![image](https://user-images.githubusercontent.com/30950318/133797446-4ad01d0a-dd32-4838-912f-1d7f248bf1b5.png)
-
-Functionality of the Singleton Class
-
-![image](https://user-images.githubusercontent.com/30950318/133798904-cbd828f9-8713-43f4-8666-9829e1580785.png)
-
-Advantages of Singleton Design Pattern
-
-- Singleton pattern can implement interfaces.
-- Can be lazy-loaded and has Static Initialization.
-- It helps to hide dependencies.
-- It provides a single point of access to a particular instance, so it is easy to maintain.
-
-
-Use of Singleton in the app:
-
-![image](https://user-images.githubusercontent.com/30950318/133799067-ed27ab30-83f8-459e-83ed-b9ef89025fb5.png)
-
-### Factory Method [Code](https://github.com/andycb479/TMPS-Labs/tree/master/Lab_1/Factory)
-Factory Method is a Design Pattern which defines an interface for creating an object but lets the classes that implement the interface decide which class to instantiate. Factory Pattern lets a class postpone instantiation to sub-classes. The factory pattern is used to replace class constructors, abstracting the process of object generation so that the type of the object instantiated can be determined at run-time. 
-
-![image](https://user-images.githubusercontent.com/30950318/133798379-d5f2aea7-b33b-439d-9f59-f039fb873f91.png)
-
-The classes and objects participating in the above UML class diagram are as follows:
-
-1. Product 
-
-This defines the interface of objects the factory method creates
-
-2. ConcreteProduct
-
-This is a class that implements the Product interface.
-
-3. Creator
-
-This is an abstract class and declares the factory method, which returns an object of type Product.
-This may also define a default implementation of the factory method that returns a default ConcreteProduct object.
-This may call the factory method to create a Product object.
-
-4. ConcreteCreator
-
-This is a class that implements the Creator class and overrides the factory method to return an instance of a ConcreteProduct.
-
-The implementation within the Business Logic:
-
-The abstract class factory - the base factory
-
-![image](https://user-images.githubusercontent.com/30950318/133799419-3b9d57b8-3f92-405c-892e-75d344b3c464.png)
-
-Concrete Factory
-
-![image](https://user-images.githubusercontent.com/30950318/133799879-4e1623c7-47d9-41b1-b632-a907607361d9.png)
-
-The use of the factory for seeding the database with records
-
-![image](https://user-images.githubusercontent.com/30950318/133799988-1146bda7-8dd6-4e6c-a7cf-0e5b2529a525.png)
-
-
-
-
+### Proxy [Code](https://github.com/andycb479/TMPS-Labs/tree/master/Lab_1/Factory)
 
 ### Prototype
 Prototype is a creational design pattern that lets you copy existing objects without making your code dependent on their classes.
