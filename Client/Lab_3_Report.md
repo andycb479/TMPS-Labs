@@ -72,7 +72,7 @@ LinearCongruentialRandomIdGenerator - the implementation of the abstract class t
 
 ![image](https://user-images.githubusercontent.com/30950318/143627507-8c156c4e-5a27-4a42-9cd7-c43edb26db87.png)
 
-LinearCongruentialRandom - class that implements the Linear congruential generator. [Code](Utilites/IdGenerator/LinearCongruentialRandom.cs)
+LinearCongruentialRandom - class that implements the Linear congruential generator. [Code](https://github.com/andycb479/TMPS-Labs/blob/master/Utilites/IdGenerator/LaggedFibRandom.cs)
 
 ![image](https://user-images.githubusercontent.com/30950318/143627591-4fa6244e-c5dc-49b1-a40e-11ce2616cbf9.png)
 
