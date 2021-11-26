@@ -4,6 +4,7 @@ namespace Domain.Models.Reservee
 {
      public class Reservee: BaseEntity
      {
+          public string Id { get; set; }
           public int Age { get; set; }
           public string FirstName { get; set; }
           public string LastName { get; set; }

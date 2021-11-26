@@ -1,4 +1,4 @@
-﻿namespace Core.VideoStream.Proxy
+﻿namespace Domain.Models.Video
 {
      public class SpotVideoProxy : ISpotVideo
      {

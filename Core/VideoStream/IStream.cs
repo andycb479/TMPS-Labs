@@ -1,4 +1,4 @@
-﻿using Core.VideoStream.Proxy;
+﻿using Domain.Models.Video;
 
 namespace Core.VideoStream
 {

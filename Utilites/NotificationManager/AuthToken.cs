@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Text;
-
-namespace Reservation_System.Facade
+﻿namespace Utility.NotificationManager
 {
      public class AuthToken
      {
