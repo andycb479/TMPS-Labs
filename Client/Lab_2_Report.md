@@ -1,48 +1,22 @@
 # Topic: *Structural Design Patterns*
 ## Author: *Ciobanu Andy-Constantin*
 ## Objectives :
-__1. Study and understand the Structural Design Patterns;__
+__1. Study and understand the Behavioral Design Patterns;__
 
 __2. As a continuation of the previous laboratory work, think about the functionalities that your system will need to provide to the user;__
 
-__3. Implement some additional functionalities using structural design patterns;__
+__3. Implement some additional functionalities using behavioral design patterns;__
 
 ## Used Design Patterns: 
-* Facade Pattern
-* Proxy Pattern
-* Decorator Pattern
+* Strategy Pattern
+* Template Method Pattern
 
 ## Used Language: 
 C# .NET
 
 ## Theoretical aspects : 
 
-Structural design patterns are those that simplify the design of large object structures by identifying relationships between them. They describe common ways of composing classes and objects so that they become repeatable as solutions.
-
-### Facade - [Code](https://github.com/andycb479/TMPS-Labs/tree/master/Utilites/NotificationManager)
-The facade pattern (also spelled façade) is a software-design pattern commonly used in object-oriented programming. Analogous to a facade in architecture, a facade is an object that serves as a front-facing interface masking more complex underlying or structural code. 
-A facade can:
-* improve the readability and usability of a software library by masking interaction with more complex components behind a single (and often simplified) API
-* provide a context-specific interface to more generic functionality (complete with context-specific input validation)
-* serve as a launching point for a broader refactor of monolithic or tightly-coupled systems in favor of more loosely-coupled code
-
-![image](https://user-images.githubusercontent.com/30950318/136900188-9f71d7ad-f195-4bb8-8136-abba8114c4fe.png)
-
-Here, we can see that the client is calling the Façade class which interacts with multiple subsystems making it easier for the client to interact with them.
-
-Below is the Notification Service façade class implementation, which will be used by the client to send a notification to a specific Reservee.
-
-![image](https://user-images.githubusercontent.com/30950318/136900567-b625b162-85ba-4766-8aa9-ae956b28c6ca.png)
-
-Here we can see that the Notification Service class is hiding the implementation of sending a notification. Giving the client a simple method that it can use to send a notification without having to know about the internal processes and subsystem access.
-
-Below is the implementation of the NotificationServed that is a subsystem that the Notification Service interacts with.
-
-![image](https://user-images.githubusercontent.com/30950318/136900865-7cd0614e-d4d4-43d4-8c2d-199df479fdb2.png)
-
-Use of Facade in the Client:
-
-![image](https://user-images.githubusercontent.com/30950318/136900405-c1582202-fbdb-4164-9b9e-f20dae382ddd.png)
+In software engineering, behavioral design patterns are design patterns that identify common communication patterns between objects and realize these patterns. By doing so, these patterns increase flexibility in carrying out this communication.
 
 ### Proxy [Code](https://github.com/andycb479/TMPS-Labs/tree/master/Domain/Models/Video)
 

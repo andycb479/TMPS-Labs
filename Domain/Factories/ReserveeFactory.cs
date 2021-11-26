@@ -2,17 +2,19 @@
 using System.Globalization;
 using System.Text.RegularExpressions;
 using Domain.Models.Reservee;
+using Utility.IdGenerator;
+using Utility.Logger;
 
 namespace Domain.Factories
 {
      public sealed class ReserveeFactory : Factory
      {
-          // private readonly IIdGenerator _idGenerator;
-          //
-          // public ReserveeFactory(IIdGenerator generator)
-          // {
-          //      _idGenerator = generator;
-          // }
+          private readonly IIdGenerator _idGenerator;
+
+          public ReserveeFactory(IIdGenerator generator)
+          {
+               _idGenerator = generator;
+          }
 
           public Reservee CreateReservee(int age, string firstName, string lastName, string email, string country, string city, string phone = "")
           {
@@ -20,7 +22,7 @@ namespace Domain.Factories
 
                var isVerified = VerifyUser(phone);
 
-               var id = new Random().Next();
+               var id = _idGenerator.GenerateId(firstName, lastName);
 
                bool VerifyUser(string phoneArg)
                {

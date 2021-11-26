@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using Domain.Factories;
 using Domain.Models.Reservee;
+using Utility.IdGenerator;
 
 namespace Data.Database
 {
@@ -8,9 +9,9 @@ namespace Data.Database
      {
           public List<Reservee> Reservees { get; set; }
           private ReserveeFactory _factory;
-          public ReserveesDb()
+          public ReserveesDb(IIdGenerator generator)
           {
-               _factory = new ReserveeFactory();
+               _factory = new ReserveeFactory(generator);
 
                Reservees = new List<Reservee>()
                {

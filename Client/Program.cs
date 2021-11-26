@@ -1,7 +1,8 @@
 ﻿using Data.Database;
 using System;
 using Core.VideoStream;
-using Core.VideoStream.Proxy;
+using Domain.Models.Video;
+using Utility.IdGenerator;
 using Utility.NotificationManager;
 
 namespace Client
@@ -10,12 +11,20 @@ namespace Client
      {
           public static void Main(string[] args)
           {
+               //Strategy Pattern Implementation
+               var reserveesWithGuidId = new ReserveesDb(new GuidGenerator()).Reservees;
+               var reserveesWithEncodedId = new ReserveesDb(new EncodedCodeIdGenerator()).Reservees;
+
+               //Template Pattern Implementation
+               var reserveesWithLaggedFibRandomId = new ReserveesDb(new LinearCongruentialRandomIdGenerator()).Reservees;
+               var reserveesWithLinearCongruentialRandomId = new ReserveesDb(new LaggedFibRandomIdGenerator()).Reservees;
 
 
-               var reservees = new ReserveesDb().Reservees;
+
+
                var restaurants = new RestaurantsDb().Restaurants;
                var nightClubs = new NightClubsDb().NightClubs;
-               var reservations = new ReservationsDb(restaurants, reservees).Reservations;
+               var reservations = new ReservationsDb(restaurants, reserveesWithGuidId).Reservations;
 
                // Proxy pattern implementation.
 
@@ -30,6 +39,7 @@ namespace Client
                spotVideos.AddVideo(new SpotVideoProxy(AndysInteriorSnapshot, "Andy's Interior"));
 
                spotVideos.OpenVideo("KFC Add");
+               
 
                Console.WriteLine("\n\n");
 
@@ -49,7 +59,7 @@ namespace Client
                // Facade pattern use.
 
                var notificationService = new NotificationService();
-               notificationService.Send("Hello there.", reservees[2].Phone);
+               notificationService.Send("Hello there.", reserveesWithEncodedId[2].Phone);
 
 
           }

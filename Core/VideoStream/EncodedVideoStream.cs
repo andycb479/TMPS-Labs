@@ -1,5 +1,5 @@
 ﻿using System;
-using Core.VideoStream.Proxy;
+using Domain.Models.Video;
 
 namespace Core.VideoStream
 {
@@ -21,7 +21,7 @@ namespace Core.VideoStream
                Console.WriteLine($"Encoding video with the title {video.GetVideoTitle()}");
                return video;
           }
-
-          
      }
 }
+
+

@@ -1,4 +1,4 @@
-﻿namespace Reservation_System.Facade
+﻿namespace Utility.NotificationManager
 {
      public class Connection
      {
