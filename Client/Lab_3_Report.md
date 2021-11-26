@@ -64,7 +64,7 @@ LaggedFibRandomIdGenerator - the implementation of the abstract class that estab
 
 ![image](https://user-images.githubusercontent.com/30950318/143627209-8a197913-9edc-46bb-8115-408aa5a72465.png)
 
-LaggedFibRandom - class that implements the Lagged Fibonacci generator. [Code](https://github.com/andycb479/TMPS-Labs/blob/master/Utilites/IdGenerator/LaggedFibRandom.cs)
+LaggedFibRandom - class that implements the Lagged Fibonacci generator. [Code](Utilites/IdGenerator/LaggedFibRandom.cs)
 
 ![image](https://user-images.githubusercontent.com/30950318/143627356-1adc3c16-255a-47f7-8076-e6baad9d676d.png)
 
@@ -72,7 +72,7 @@ LinearCongruentialRandomIdGenerator - the implementation of the abstract class t
 
 ![image](https://user-images.githubusercontent.com/30950318/143627507-8c156c4e-5a27-4a42-9cd7-c43edb26db87.png)
 
-LinearCongruentialRandom - class that implements the Linear congruential generator. [Code](https://github.com/andycb479/TMPSLabs/blob/master/Utilites/IdGenerator/LinearCongruentialRandom.cs)
+LinearCongruentialRandom - class that implements the Linear congruential generator. [Code](Utilites/IdGenerator/LinearCongruentialRandom.cs)
 
 ![image](https://user-images.githubusercontent.com/30950318/143627591-4fa6244e-c5dc-49b1-a40e-11ce2616cbf9.png)
 
